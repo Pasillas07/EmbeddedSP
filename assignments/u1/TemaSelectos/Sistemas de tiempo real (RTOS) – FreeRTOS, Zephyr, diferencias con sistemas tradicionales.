@@ -1,0 +1,65 @@
+# Sistemas de Tiempo Real (RTOS)
+## Datos del Alumno
+- **Nombre:** Pasillas Hernandez Jose Ricardo
+- **Número de control:** 20211823
+- **Fecha:** 06/02/2025
+- **Nickname:** Pasillas07
+
+## Introducción
+Los **sistemas de tiempo real** (RTOS, *Real-Time Operating Systems*) son sistemas operativos diseñados para ejecutar tareas dentro de restricciones de tiempo estrictas. A diferencia de los sistemas operativos tradicionales, los RTOS deben garantizar tiempos de respuesta predecibles y consistentes, lo que los hace ideales para aplicaciones embebidas, automatización industrial y sistemas críticos.
+
+## Características de un RTOS
+- **Determinismo:** Las tareas deben ejecutarse en un tiempo predecible.
+- **Multitarea y planificación:** Uso de **schedulers** para gestionar múltiples tareas de manera eficiente.
+- **Bajo consumo de recursos:** Diseñados para dispositivos con capacidades limitadas.
+- **Soporte para interrupciones:** Manejo rápido y eficiente de eventos externos.
+- **Sincronización y comunicación entre tareas:** Uso de colas, semáforos y mutex.
+
+---
+
+## Comparación de FreeRTOS y Zephyr
+
+### 1. **FreeRTOS**
+FreeRTOS es un RTOS de código abierto ampliamente utilizado en sistemas embebidos.
+
+**Ventajas:**
+- Ligero y eficiente.
+- Soporte para múltiples arquitecturas (ARM, RISC-V, x86, etc.).
+- Amplia comunidad y documentación.
+- Integración con AWS IoT y otros servicios en la nube.
+
+**Desventajas:**
+- Carece de un modelo de seguridad robusto en comparación con otros RTOS modernos.
+- Menos modularidad en comparación con Zephyr.
+
+### 2. **Zephyr**
+Zephyr es un RTOS de código abierto respaldado por la Linux Foundation, diseñado para dispositivos IoT y sistemas embebidos modernos.
+
+**Ventajas:**
+- Arquitectura modular y altamente configurable.
+- Soporte para más de 350 placas y múltiples arquitecturas.
+- Integración con tecnologías de seguridad avanzadas.
+- Compatible con herramientas de desarrollo de Linux.
+
+**Desventajas:**
+- Mayor curva de aprendizaje comparado con FreeRTOS.
+- Requiere más recursos en comparación con FreeRTOS en aplicaciones pequeñas.
+
+---
+
+## Diferencias con Sistemas Operativos Tradicionales
+| Característica           | RTOS (FreeRTOS/Zephyr) | SO Tradicional (Linux, Windows) |
+|-------------------------|----------------------|--------------------------------|
+| **Tiempo de respuesta** | Determinístico       | No determinístico             |
+| **Gestión de tareas**   | Basada en prioridad  | Multitarea general            |
+| **Recursos requeridos** | Bajo consumo        | Mayor uso de recursos         |
+| **Interrupciones**      | Manejo optimizado   | Depende del kernel            |
+| **Aplicaciones**        | Embebidos, IoT      | PCs, servidores               |
+
+---
+
+## Conclusión
+Los sistemas de tiempo real como **FreeRTOS** y **Zephyr** son fundamentales en aplicaciones donde el tiempo de respuesta es crítico. Mientras que **FreeRTOS** es ideal para sistemas embebidos pequeños y eficientes, **Zephyr** ofrece una solución más robusta y segura para dispositivos IoT avanzados. Su elección dependerá de los requisitos específicos del proyecto.
+
+---
+
